@@ -57,6 +57,17 @@ const courgette = [
     }
 ]
 
-//con il forEach estrapolo il peso di ciascun oggetto
+//setto la somma su 0
+let sum = 0;
 
-//con return restituisco la somma
+//con il forEach estrapolo il peso di ciascun oggetto dell'array
+courgette.forEach((element) => {
+    //creo una variabile e le assegno il valore 'weight' di ogni elemento
+    const weight = element.weight;
+
+    // assegno alla somma il valore di tutti i pesi sommati
+    sum += weight;
+})
+
+//stampo in console il peso totale
+console.log(`The total weight is ${sum} gr`);
