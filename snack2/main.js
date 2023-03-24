@@ -16,16 +16,15 @@ function array_of_values(array, a, b) {
 
     
     const a_b_array = array.filter((number) => {
-        b <= array.length;
-        a < b;
-        return a > number < b;
+        /* b <= array.length;
+        a < b; */
+        return number < b && number > a;
     })
 
     //con filter() verifico la condizione di esistenza dei valori comprsi tra a e b
-
+    console.log(a_b_array)
     //ritorno i valori compresi tra a e b
 }
 
-const array = array_of_values(numbers, 2, 512);
-console.log(array);
+array_of_values(numbers, 2, 512);
 
